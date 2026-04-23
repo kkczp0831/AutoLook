@@ -1,0 +1,48 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "autolook"
+version = "0.1.0"
+description = "Local screen-vision automation scaffold for pet detection and capture workflows."
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+  "opencv-python>=4.9",
+  "mss>=9.0",
+  "numpy>=1.26",
+  "pydantic>=2.6",
+  "PyYAML>=6.0",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "ruff>=0.4",
+]
+control = [
+  "pydirectinput>=1.0.4",
+  "pywin32>=306; platform_system == 'Windows'",
+]
+onnx = [
+  "onnxruntime>=1.17",
+]
+yolo = [
+  "ultralytics>=8.0",
+]
+
+[project.scripts]
+autolook = "autolook.main:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+addopts = "-p no:cacheprovider"

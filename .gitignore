@@ -1,0 +1,34 @@
+.venv/
+__pycache__/
+*.py[cod]
+*.pyd
+.pytest_cache/
+pytest-cache-files-*/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+*.egg-info/
+
+# Runtime artifacts
+tests/fixtures/generated/
+data/logs/*
+!data/logs/.gitkeep
+data/screenshots/*
+!data/screenshots/.gitkeep
+data/recordings/*
+!data/recordings/.gitkeep
+data/datasets/raw/*
+!data/datasets/raw/.gitkeep
+data/datasets/labeled/*
+!data/datasets/labeled/.gitkeep
+
+# Local secrets and machine-specific settings
+.env
+config/local.yaml
+
+*.zip
+*.mp4
+*.mp4.*
