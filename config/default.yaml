@@ -7,7 +7,7 @@ app:
   overlay_candidate_color: "#00BFFF"
   overlay_thickness: 3
   debug_interval_seconds: 1.0
-  tick_interval_seconds: 0.1
+  tick_interval_seconds: 0.01
   max_runtime_seconds: 30
 
 window:
@@ -48,12 +48,12 @@ vision:
 
 control:
   camera:
-    center_tolerance_px: 15
+    center_tolerance_px: 50
     key_left: "left"
     key_right: "right"
     key_up: "up"
     key_down: "down"
   capture:
     ball_button: "left"
-    aim_hold_seconds: 0.35
-    throw_cooldown_seconds: 1.0
+    aim_hold_seconds: 0.1
+    throw_cooldown_seconds: 0.1
