@@ -1,3 +1,5 @@
+# 启动脚本：以预设参数运行 AutoLook 主流程。
+# 默认启用 live/debug/overlay/focus-click 等运行参数，可额外追加命令行参数覆盖。
 from __future__ import annotations
 
 import sys
@@ -21,7 +23,7 @@ RUN_ARGS = [
     "--start-delay",
     "5",
     "--max-runtime",
-    "120",
+    "60",
 ]
 
 

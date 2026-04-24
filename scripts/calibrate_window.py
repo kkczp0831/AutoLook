@@ -1,3 +1,5 @@
+# 窗口校准脚本：读取当前配置并解析游戏窗口的截图区域。
+# 用于查看 left/top/width/height，方便回填到 config/default.yaml。
 from __future__ import annotations
 
 from _bootstrap import add_src_to_path

@@ -1,3 +1,5 @@
+# 窗口查询脚本：按标题关键字查找可见窗口并打印窗口句柄和区域。
+# 用于确认游戏窗口标题和截图区域是否能被正确识别。
 from __future__ import annotations
 
 import argparse

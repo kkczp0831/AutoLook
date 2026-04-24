@@ -1,3 +1,5 @@
+# 脚本辅助模块：把项目的 src 目录加入 Python 搜索路径。
+# 供 scripts 目录下其它脚本导入项目代码使用，通常不需要单独运行。
 from __future__ import annotations
 
 import sys

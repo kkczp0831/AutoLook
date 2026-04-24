@@ -1,3 +1,5 @@
+# 瞄准调试脚本：在截图或实时画面上运行检测并标注目标、中心点和移动方向。
+# 用于验证识别结果和相机对准逻辑，不会移动鼠标键盘。
 from __future__ import annotations
 
 import argparse

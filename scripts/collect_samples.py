@@ -1,3 +1,5 @@
+# 样本采集脚本：按配置定位窗口并定时截屏保存。
+# 用于收集训练或调试用的原始游戏画面样本。
 from __future__ import annotations
 
 import argparse

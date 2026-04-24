@@ -1,3 +1,5 @@
+# 模板匹配调试脚本：在截图或实时画面上运行模板匹配并输出最高分结果。
+# 会保存带框标注的调试图片，方便检查模板质量和阈值设置。
 from __future__ import annotations
 
 import argparse

@@ -1,3 +1,5 @@
+# 环境检查脚本：检查运行 AutoLook 所需的 Python 依赖是否已安装。
+# 会根据当前视觉后端提示应安装的 control/yolo 等依赖组合。
 from __future__ import annotations
 
 from _bootstrap import add_src_to_path
